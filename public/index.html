@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <!--  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons"> -->
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="/bower_components/bootstrap-material-design/dist/css/ripples.min.css">
+
+   <!--  <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.0.0-beta.3/dist/css/bootstrap-material-design.min.css" integrity="sha384-k5bjxeyx3S5yJJNRD1eKUMdgxuvfisWKku5dwHQq9Q/Lz6H8CyL89KF52ICpX4cL" crossorigin="anonymous"> -->
+  </head>
+  <body>
+    <div class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Detección de ladrones</a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="javascript:void(0)">Home</a></li>
+            <li ><a href="/historico">Histórico</a></li>
+            <li ><a href="/configurar_mail">Configurar mail</a></li>
+          </ul> 
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8" id="canvas-wrapper">
+                <canvas id="video-canvas" class="camera"></canvas>
+            </div>
+            <div class="col-sm-4">
+              <div class="row">
+                <div class="col-xs-12">
+                    <h1>Sensibilidad 
+                      <a class="btn btn-primary change-coef">-</a>
+                      <a data-add class="btn btn-primary change-coef">+</a>
+                    </h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="progress">
+                  <div id="coef-progress" class="progress-bar" style="width: 0;"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div id="alerts-wrapper">
+
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="/bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script> -->
+    <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
+    <script type="text/javascript" src="/bower_components/socket.io-client/dist/socket.io.js"></script>
+    <script src="/app.js"></script>
+
+  </body>
+</html>

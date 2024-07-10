@@ -1,0 +1,40 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        link(rel="stylesheet", href="/bower_components/bootstrap/dist/css/bootstrap.min.css")
+        link(rel="stylesheet", href="/bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.min.css")
+        link(rel="stylesheet", href="/bower_components/bootstrap-material-design/dist/css/ripples.min.css")
+        link(href="/lightbox.css", rel="stylesheet")
+    body
+        div(class="navbar navbar-default")
+            div(class="container-fluid")
+            div(class="navbar-header")
+                button(type="button", class="navbar-toggle", data-toggle="collapse", data-target=".navbar-responsive-collapse")
+                span(class="icon-bar")
+                span(class="icon-bar")
+                span(class="icon-bar")
+                a(class="navbar-brand", href="/") Detección de ladrones
+            div(class="navbar-collapse collapse navbar-responsive-collapse")
+                ul(class="nav navbar-nav")
+                    li
+                        a(href="/") Home
+                    li(class="active")
+                        a(href="/historico") Histórico
+                    li
+                        a(href="/Configurar_mail") Configurar mail
+                    li(class="active")
+        div(class="container")
+            div(class="row")
+                each f in img
+                    div(class="col-sm-2")
+                        a(href="photos/"+f, data-lightbox="image01" , data-title=f)
+                            img(src="photos/"+f, height="200", width="200", class="img-thumbnail", alt=f)
+        
+        script(type="text/javascript",src="/bower_components/jquery/dist/jquery.min.js")
+        script(type="text/javascript", src="/bower_components/bootstrap/dist/js/bootstrap.min.js")
+        script(type="text/javascript", src="/bower_components/bootstrap-material-design/dist/js/material.min.js")
+        script(type="text/javascript", src="/bower_components/socket.io-client/dist/socket.io.js")
+        script(src="/lightbox.js")
+

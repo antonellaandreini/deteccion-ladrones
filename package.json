@@ -1,0 +1,35 @@
+{
+  "name": "deteccion-ladrones",
+  "version": "1.0.0",
+  "description": "Detección de ladrones con RaspberryPi y webcam",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.15.2",
+    "formidable": "^1.1.1",
+    "jade": "^1.11.0",
+    "nodemailer": "^4.4.0",
+    "opencv": "^6.0.0",
+    "pg": "^7.3.0",
+    "sequelize": "^4.22.12",
+    "sequelize-cli": "^3.0.0",
+    "sequelize-values": "^1.1.0",
+    "sharp": "^0.17.3",
+    "socket.io": "^2.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abonifacio/deteccion-ladrones.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abonifacio/deteccion-ladrones/issues"
+  },
+  "homepage": "https://github.com/abonifacio/deteccion-ladrones#readme"
+}
